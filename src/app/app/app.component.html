@@ -1,0 +1,131 @@
+
+
+<!-- </p><h1>My name is {{name}} and i {{age}} old</h1>
+<img (click)="fun()" [src]="obj.imagePath" alt="">
+<p *ngIf="a > 10">Error</p>
+<p *ngFor="let i of arr">{{i}}</p>
+<app-yevgen (click)="fun()"></app-yevgen>
+
+
+<ul>
+    <li *ngFor="let u of users" >
+        {{u.name}}   <br> 
+        {{u.surname}}   <br> 
+        {{u.age}}   <br> 
+        {{u.city}}   <br> <br>
+    </li> 
+</ul>
+
+<p *ngIf="users.length == 0 else countBlock ">No users here</p>
+
+<ng-template #countBlock>
+    Here {{users.length}} users
+</ng-template>
+
+<hr>
+
+<input type="text" [(ngModel)]="title">
+<p>{{title}}</p>
+<input type="text" [(ngModel)]="tittle">
+<p>{{tittle}}</p> -->
+
+
+
+
+<!-- <div class="container">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</div> -->
+<style>
+    nav {
+        padding: 19px;
+        background-color: rgb(231, 161, 161);
+        color: white !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    body{
+        text-align: center;
+    }
+    a {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: rgb(200, 0, 0);
+        transition-duration: .1s;
+    }
+    a:hover{
+        background-color: rgb(166, 0, 0);
+    }
+    a:active{
+        transform: translate(0px, 10px);
+    }
+    .img{
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<nav>
+    <a routerLink="/evgen1">Кот - британец</a>
+    <a routerLink="/evgen2">Кот - сфинкс</a>
+    <a routerLink="/evgen3">Кот - гепард</a>
+</nav>
+<div class="img"><router-outlet></router-outlet></div>
